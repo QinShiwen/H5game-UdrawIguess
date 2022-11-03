@@ -1,15 +1,39 @@
 
-# This is a HTML5 games you draw I guess
+# You draw I guess
+This is a HTML5 games you draw I guess
 
-## The components:
+## The pages
+There are pages:
+- gameroom  Used for players together play this game.
+- main  Used for game introduction, log and register. 
+- gamehall Used for create and find groups.  
+
+## Components in different pages
+### gameroom
+- Body
+ - Container
+    - LeftRank
+    - GameArea
+        - CanvasBoard 
+            - ToolBar
+        - AnswerBaord
+
+## User info data structure
+user{
+    id:string[8];
+    name:string[8];
+    password:string[16];
+}
 
 
 ## The relative module I used:
-- style-components 
+- style-components  split to write the style of each component
+- antd  UI framework for react
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
