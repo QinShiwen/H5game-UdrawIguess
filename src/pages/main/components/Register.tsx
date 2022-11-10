@@ -1,5 +1,5 @@
 
 
-export const RegisterForm = ()=>{
-
+export const Register = ()=>{
+    
 }
