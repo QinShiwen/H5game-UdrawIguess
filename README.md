@@ -1,10 +1,39 @@
-<<<<<<< HEAD
-# H5game-UdrawIguess
-H5game-UdrawIguess
-=======
+
+# You draw I guess
+This is a HTML5 games you draw I guess
+
+## The pages
+There are pages:
+- gameroom  Used for players together play this game.
+- main  Used for game introduction, log and register. 
+- gamehall Used for create and find groups.  
+
+## Components in different pages
+### gameroom
+- Body
+ - Container
+    - LeftRank
+    - GameArea
+        - CanvasBoard 
+            - ToolBar
+        - AnswerBaord
+
+## User info data structure
+user{
+    id:string[8];
+    name:string[8];
+    password:string[16];
+}
+
+
+## The relative module I used:
+- style-components  split to write the style of each component
+- antd  UI framework for react
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
@@ -48,4 +77,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
->>>>>>> 2e2b744 (Initialize project using Create React App)
