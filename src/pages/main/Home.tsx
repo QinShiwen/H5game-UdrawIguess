@@ -4,8 +4,9 @@ import Icon, { SketchOutlined, MailFilled } from "@ant-design/icons";
 
 export const LoginHome = () => {
   const [ifLogForm, setIfLogForm] = useState(true);
-  const [email,setEmail] = useState("")
-  const [password,setPassword] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [comfirm, setComfirm] = useState("");
 
   return (
     <Body>
@@ -21,14 +22,24 @@ export const LoginHome = () => {
               <div>Email Address</div>
               <div>
                 <MailFilled />
-                <input placeholder="email" onChange={(e)=>{setEmail(e.target.value)}}/>
+                <input
+                  placeholder="email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className="text-box">
               <div>Password</div>
               <div>
                 <MailFilled />
-                <input placeholder="password" onChange={(e)=>{setPassword(e.target.value)}}/>
+                <input
+                  placeholder="password"
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <button>Login</button>
@@ -46,21 +57,36 @@ export const LoginHome = () => {
               <div>Email Address</div>
               <div>
                 <MailFilled />
-                <input placeholder="email" />
+                <input
+                  placeholder="email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className="text-box">
               <div>Password</div>
               <div>
                 <MailFilled />
-                <input placeholder="password" />
+                <input
+                  placeholder="password"
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className="text-box">
               <div>Comfirm Password</div>
               <div>
                 <MailFilled />
-                <input placeholder="comfirm password" />
+                <input
+                  placeholder="comfirm password"
+                  onChange={(e) => {
+                    setComfirm(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <button>Register</button>

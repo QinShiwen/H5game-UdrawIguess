@@ -1,4 +1,5 @@
 
+import axios from "axios"
 
 interface loginProps {
     email:string
@@ -10,10 +11,22 @@ interface registerProps {
     password:string
 }
 
-export const login = ()=>{
-
+export const login =  async (email:string,pass:string)=>{
+    let loginRequest = await axios({
+        method: "post",
+        url: "",
+        data: {
+          email,pass
+        },
+      });
 }
 
-export const register = ()=>{
-    
+export const register = async (email:string,pass:string,confirm:string)=>{
+    let loginRequest = await axios({
+        method: "post",
+        url: "",
+        data: {
+          email,pass
+        },
+      });
 }

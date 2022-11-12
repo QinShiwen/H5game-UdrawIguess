@@ -8,7 +8,7 @@ There are pages:
 - main  Used for game introduction, log and register. 
 - gamehall Used for create and find groups.  
 
-## Components in different pages
+## Components in different pages / Routes control
 ### gameroom
 - Body
  - Container
@@ -17,6 +17,10 @@ There are pages:
         - CanvasBoard 
             - ToolBar
         - AnswerBaord
+# Login and register
+- LoginForm
+- RegisterForm
+
 
 ## User info data structure
 user{
