@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Icon, { SketchOutlined, MailFilled } from "@ant-design/icons";
+import { login,register } from "./login"
 
 export const LoginHome = () => {
   const [ifLogForm, setIfLogForm] = useState(true);
@@ -42,7 +43,7 @@ export const LoginHome = () => {
                 />
               </div>
             </div>
-            <button>Login</button>
+            <button onClick={()=>login(email,password)}>Login</button>
             <a
               onClick={() => {
                 setIfLogForm(!ifLogForm);
@@ -89,7 +90,7 @@ export const LoginHome = () => {
                 />
               </div>
             </div>
-            <button>Register</button>
+            <button onClick={()=>register(email,password,comfirm)}>Register</button>
             <a
               onClick={() => {
                 setIfLogForm(!ifLogForm);

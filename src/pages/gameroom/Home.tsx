@@ -10,8 +10,8 @@ interface project {
 
 export function GameRoomHome() {
 
-    const [gameTimer,setgameTimer] = useState(100)
-
+    const [gameTimer,setgameTimer] = useState(100);
+    const [gameState,setGameState] = useState("")
     function ticker(){
         setTimeout(()=>{
             setgameTimer(gameTimer-1)
@@ -20,7 +20,8 @@ export function GameRoomHome() {
     }
 
     useEffect(()=>{
-        ticker()
+        //ticker()
+
     })
 
   return (
@@ -174,7 +175,7 @@ const CanvasBorad = styled.div`
 
   .canvas {
     width: 800px;
-    height: 500px;
+    height: 400px;
     background: #ffffff;
   }
 
