@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import "./assets/main.css";
+import 'antd/dist/antd.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
